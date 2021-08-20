@@ -1,0 +1,23 @@
+@charset "UTF-8";
+@import "_default";
+
+
+body {
+  font-size: 20px;
+}
+
+
+
+.container {max-width: 1400px;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: rgb(172, 172, 172);
+  text-align: center; 
+}
+
+.container__flow { }
+
+.container__red { }
+
+.blue { color:#27a9f5;
+}
