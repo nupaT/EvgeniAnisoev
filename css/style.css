@@ -106,9 +106,13 @@ h6 {
 }
 
 .profile, .contacts, .targets, .skills, .addInfo, .examples {
-  border-bottom: 2px solid #6b6b6b;
   margin: 0px 50px 20px 55px;
   padding: 0px 0px 50px 0px;
+  border-bottom: 1px solid #6b6b6b;
+  -o-border-image: linear-gradient(to right top, blue, skyblue, blue);
+     border-image: -webkit-gradient(linear, left bottom, right top, from(blue), color-stop(skyblue), to(blue));
+     border-image: linear-gradient(to right top, blue, skyblue, blue);
+  border-image-slice: 1;
 }
 
 body {
