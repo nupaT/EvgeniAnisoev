@@ -4,20 +4,73 @@
 
 body {
   font-size: 20px;
+  color: #fff;
 }
 
 
 
-.container {max-width: 1400px;
+.container {
+  max-width: 880px;
   height: 100vh;
   margin: 0 auto;
-  background-color: rgb(172, 172, 172);
+  // background-color: rgb(172, 172, 172);
+  background: linear-gradient(#C4C4C4, #1D4025B5);
   text-align: center; 
 }
 
-.container__flow { }
-
-.container__red { }
-
-.blue { color:#27a9f5;
+.wrapper {
+  width: 770px;
+  margin: 0 auto;
+  // background-color: rgb(190, 236, 129);
 }
+
+.nav {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  background: linear-gradient(#B9B7B7, #1D4025F5);
+
+  ul {
+    width: 100%;
+    margin: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    a {
+      color: #fff;
+      font-weight: bold;
+    }
+  }
+}
+
+
+.profile {
+  height: 195px;
+  // padding: 50px 0px 0px 55px;
+  display: flex;
+  border-bottom: 2px solid #6b6b6b;
+  align-items: center;
+ }
+
+.profile__foto {
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+  color: #fff;
+ }
+
+.profile__description {
+  margin: 0px 0px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+ }
+
+.profile__desc-name {
+  margin: 0px 0px 15px 0px;
+  }
+
+.profile__desc-proffesion {
+  font-size: 22px;
+  font-weight: bold;
+ }
