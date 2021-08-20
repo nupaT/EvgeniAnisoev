@@ -105,9 +105,10 @@ h6 {
   font-style: normal;
 }
 
-.profile, .contacts {
+.profile, .contacts, .targets {
   border-bottom: 2px solid #6b6b6b;
-  margin: 0px 0px 15px 0px;
+  margin: 0px 50px 20px 55px;
+  padding: 0px 0px 50px 0px;
 }
 
 body {
@@ -126,9 +127,17 @@ body {
   letter-spacing: 0.15em;
   font-weight: bold;
   font-size: 22px;
+  margin: 0px 0px 30px 0px;
 }
 
 .main__container {
+  max-width: 880px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100vh;
   margin: 0 auto;
   background: -webkit-gradient(linear, left top, left bottom, from(#C4C4C4), to(#1D4025B5));
@@ -151,6 +160,7 @@ body {
           align-items: center;
   background: -webkit-gradient(linear, left top, left bottom, from(#B9B7B7), to(#1D4025F5));
   background: linear-gradient(#B9B7B7, #1D4025F5);
+  margin: 0px 0px 50px 0px;
 }
 
 .nav ul {
@@ -182,7 +192,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 50px 0px 50px 55px;
 }
 
 .profile__foto {
@@ -216,18 +225,18 @@ body {
   font-weight: bold;
 }
 
-.contacts__container {
-  margin: 0px 0px 50px 55px;
-}
-
-.contacts__title {
-  margin: 0px 0px 20px 0px;
-}
-
 .contacts__desc {
   text-align: left;
 }
 
 .contacts__desc li {
+  margin: 0px 0px 10px 0px;
+}
+
+.targets__desc {
+  text-align: left;
+}
+
+.targets__desc li {
   margin: 0px 0px 10px 0px;
 }

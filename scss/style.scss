@@ -4,7 +4,8 @@
 
 %borderBot {
   border-bottom: 2px solid #6b6b6b;
-  margin: 0px 0px 15px 0px;
+  margin: 0px 50px 20px 55px;
+  padding: 0px 0px 50px 0px;
 }
 
 body {
@@ -23,10 +24,13 @@ body {
   letter-spacing: 0.15em;
   font-weight: bold;
   font-size: 22px;
+  margin: 0px 0px 30px 0px;
 }
 
 .main__container {
-  // max-width: 880px; // ? подумать
+  max-width: 880px; // ? подумать
+  display: flex;
+  justify-content: center;
   height: 100vh;
   margin: 0 auto;
   background: linear-gradient(#C4C4C4, #1D4025B5);
@@ -36,7 +40,6 @@ body {
 .wrapper {
   width: 880px;
   margin: 0 auto;
-  // background-color: rgb(190, 236, 129);
 }
 
 .nav {
@@ -44,6 +47,7 @@ body {
   height: 50px;
   align-items: center;
   background: linear-gradient(#B9B7B7, #1D4025F5);
+  margin: 0px 0px 50px 0px;
 
   ul {
     width: 100%;
@@ -57,8 +61,9 @@ body {
   }
 }
 
+// Profile
+
 .profile {
-  // height: 195px;
   display: flex;
   align-items: center;
   @extend %borderBot;
@@ -66,9 +71,7 @@ body {
 
  .profile__container {
   display: flex;
-  margin: 50px 0px 50px 55px;
 }
-
 
 .profile__foto {
   width: 100px;
@@ -94,16 +97,10 @@ body {
   font-weight: bold;
  }
 
+// Contacts
+
  .contacts {
   @extend %borderBot;
-  }
-
-.contacts__container {
-  margin: 0px 0px 50px 55px
-}
-
- .contacts__title {
-   margin: 0px 0px 20px 0px;
   }
 
  .contacts__desc {
@@ -113,3 +110,15 @@ body {
    }
   }
 
+// Targets
+
+.targets {
+  @extend %borderBot
+ }
+
+.targets__desc {
+  text-align: left;
+   li {
+    margin: 0px 0px 10px 0px;
+   }
+ }
