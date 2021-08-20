@@ -117,7 +117,7 @@ body {
 }
 
 .container {
-  margin: 0 auto;
+  margin: 0px 0px 0px 55px;
   width: calc(880px - 110px);
 }
 
@@ -170,7 +170,6 @@ body {
 }
 
 .profile {
-  height: 195px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,6 +182,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 50px 0px 50px 55px;
 }
 
 .profile__foto {
@@ -214,6 +214,10 @@ body {
 .profile__desc-proffesion {
   font-size: 22px;
   font-weight: bold;
+}
+
+.contacts__container {
+  margin: 0px 0px 50px 55px;
 }
 
 .contacts__title {

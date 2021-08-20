@@ -15,7 +15,8 @@ body {
 
 .container {
   // display: flex;
-  margin: 0 auto;
+  // margin: 0 auto;
+  margin: 0px 0px 0px 55px;
   width: calc(880px - 110px);
 }
 
@@ -59,7 +60,7 @@ body {
 }
 
 .profile {
-  height: 195px;
+  // height: 195px;
   display: flex;
   align-items: center;
   @extend %borderBot;
@@ -67,7 +68,7 @@ body {
 
  .profile__container {
   display: flex;
-  // margin: 0px 0px 0px 55px
+  margin: 50px 0px 50px 55px;
 }
 
 
@@ -98,6 +99,10 @@ body {
  .contacts {
   @extend %borderBot;
   }
+
+.contacts__container {
+  margin: 0px 0px 50px 55px
+}
 
  .contacts__title {
    margin: 0px 0px 20px 0px;
