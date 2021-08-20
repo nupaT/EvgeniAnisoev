@@ -89,13 +89,46 @@ h6 {
 }
 
 /*-----------*/
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Regular.eot");
+  src: local("☺"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype"), url("../fonts/Roboto-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Bold.eot");
+  src: local("☺"), url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.ttf") format("truetype"), url("../fonts/Roboto-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.profile, .contacts {
+  border-bottom: 2px solid #6b6b6b;
+  margin: 0px 0px 15px 0px;
+}
+
 body {
+  font-family: Roboto;
   font-size: 20px;
   color: #fff;
 }
 
 .container {
-  max-width: 880px;
+  margin: 0 auto;
+  width: calc(880px - 110px);
+}
+
+.title {
+  line-height: 23px;
+  letter-spacing: 0.15em;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.main__container {
   height: 100vh;
   margin: 0 auto;
   background: -webkit-gradient(linear, left top, left bottom, from(#C4C4C4), to(#1D4025B5));
@@ -104,7 +137,7 @@ body {
 }
 
 .wrapper {
-  width: 770px;
+  width: 880px;
   margin: 0 auto;
 }
 
@@ -141,10 +174,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 2px solid #6b6b6b;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.profile__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .profile__foto {
@@ -176,4 +214,16 @@ body {
 .profile__desc-proffesion {
   font-size: 22px;
   font-weight: bold;
+}
+
+.contacts__title {
+  margin: 0px 0px 20px 0px;
+}
+
+.contacts__desc {
+  text-align: left;
+}
+
+.contacts__desc li {
+  margin: 0px 0px 10px 0px;
 }
