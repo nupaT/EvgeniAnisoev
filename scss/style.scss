@@ -31,7 +31,7 @@ body {
   max-width: 880px; // ? подумать
   display: flex;
   justify-content: center;
-  height: 100vh;
+  // height: 100vh;
   margin: 0 auto;
   background: linear-gradient(#C4C4C4, #1D4025B5);
   text-align: center; 
@@ -130,5 +130,34 @@ body {
   text-align: left;
    li {
     margin: 0px 0px 10px 0px;
+   }
+ }
+
+//  Additional information
+
+.addInfo {
+  @extend %borderBot 
+}
+
+.addInfo__desc {
+  text-align: left;
+   li {
+    margin: 0px 0px 10px 0px;
+   }
+ }
+
+//  work examples
+
+.examples {
+  @extend %borderBot 
+ }
+
+.examples__desc {
+  text-align: left;
+   li {
+    margin: 0px 0px 10px 0px;
+    a {
+      color: #fff;
+    }
    }
  }
