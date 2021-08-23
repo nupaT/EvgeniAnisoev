@@ -31,7 +31,7 @@ body {
 }
 
 .main__container {
-  max-width: 880px; // ? подумать
+  max-width: 1280px; // ? подумать
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -40,7 +40,7 @@ body {
 }
 
 .wrapper {
-  width: 880px;
+  max-width: 880px;
   margin: 0 auto;
 }
 
@@ -166,3 +166,27 @@ body {
     }
    }
  }
+
+ @media (max-width: 1200px) {
+  .wrapper {
+    max-width:880px;
+  }
+}
+
+@media (max-width: 992px) {
+  .wrapper {
+    max-width:750px;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    max-width:100%;
+    padding: 0px 15px;
+  }
+  .container{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
