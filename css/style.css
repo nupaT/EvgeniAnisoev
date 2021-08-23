@@ -115,6 +115,12 @@ h6 {
   border-image-slice: 1;
 }
 
+@media (max-width: 767px) {
+  .profile, .contacts, .targets, .skills, .add-info, .examples {
+    margin: 0px 10px 5px 10px;
+  }
+}
+
 body {
   font-family: Roboto;
   font-size: 20px;
@@ -302,5 +308,9 @@ body {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+    font-size: 15px;
+    word-break: break-all;
+    margin: 0px 5px;
+    width: 100%;
   }
 }
