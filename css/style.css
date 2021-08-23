@@ -105,13 +105,13 @@ h6 {
   font-style: normal;
 }
 
-.profile, .contacts, .targets, .skills, .addInfo, .examples {
+.profile, .contacts, .targets, .skills, .add-info, .examples {
   margin: 0px 50px 20px 55px;
   padding: 0px 0px 50px 0px;
-  border-bottom: 1px solid #6b6b6b;
-  -o-border-image: linear-gradient(to right top, blue, skyblue, blue);
-     border-image: -webkit-gradient(linear, left bottom, right top, from(blue), color-stop(skyblue), to(blue));
-     border-image: linear-gradient(to right top, blue, skyblue, blue);
+  border-bottom: 1px solid transparent;
+  -o-border-image: linear-gradient(to right top, #fffb00, #ffe600, #fffb00);
+     border-image: -webkit-gradient(linear, left bottom, right top, from(#fffb00), color-stop(#ffe600), to(#fffb00));
+     border-image: linear-gradient(to right top, #fffb00, #ffe600, #fffb00);
   border-image-slice: 1;
 }
 
@@ -119,6 +119,7 @@ body {
   font-family: Roboto;
   font-size: 20px;
   color: #fff;
+  background: #452d70;
 }
 
 .container {
@@ -143,8 +144,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
-  background: -webkit-gradient(linear, left top, left bottom, from(#C4C4C4), to(#1D4025B5));
-  background: linear-gradient(#C4C4C4, #1D4025B5);
+  background: #452d70;
   text-align: center;
 }
 
@@ -158,12 +158,16 @@ body {
   display: -ms-flexbox;
   display: flex;
   height: 50px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(#B9B7B7), to(#1D4025F5));
-  background: linear-gradient(#B9B7B7, #1D4025F5);
+  background: -webkit-gradient(linear, left top, left bottom, from(#7352af), to(#381280));
+  background: linear-gradient(#7352af, #381280);
   margin: 0px 0px 50px 0px;
+  border-radius: 10px;
 }
 
 .nav ul {
@@ -248,11 +252,11 @@ body {
   margin: 0px 0px 10px 0px;
 }
 
-.addInfo__desc {
+.add-info__desc {
   text-align: left;
 }
 
-.addInfo__desc li {
+.add-info__desc li {
   margin: 0px 0px 10px 0px;
 }
 

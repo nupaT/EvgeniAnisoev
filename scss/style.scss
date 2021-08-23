@@ -5,8 +5,8 @@
 %borderBot {
   margin: 0px 50px 20px 55px;
   padding: 0px 0px 50px 0px;
-  border-bottom: 1px solid #6b6b6b;
-  border-image: linear-gradient(to right top, blue, skyblue, blue);;//(mix-blend-mode:difference);
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(to right top, #fffb00, rgb(255, 230, 0), #fffb00);;//(mix-blend-mode:difference);
   border-image-slice: 1;
 }
 
@@ -14,6 +14,7 @@ body {
   font-family: Roboto;
   font-size: 20px;
   color: #fff;
+  background: #452d70;
 }
 
 .container { //? Нужен ли?
@@ -33,9 +34,8 @@ body {
   max-width: 880px; // ? подумать
   display: flex;
   justify-content: center;
-  // height: 100vh;
   margin: 0 auto;
-  background: linear-gradient(#C4C4C4, #1D4025B5);
+  background: #452d70;//linear-gradient(#1a2b41, #492ad6b5);
   text-align: center; 
 }
 
@@ -47,9 +47,12 @@ body {
 .nav {
   display: flex;
   height: 50px;
+  position: sticky;
+  top: 0;
   align-items: center;
-  background: linear-gradient(#B9B7B7, #1D4025F5);
+  background: linear-gradient(#7352af, #381280);
   margin: 0px 0px 50px 0px;
+  border-radius: 10px;
 
   ul {
     width: 100%;
@@ -137,11 +140,11 @@ body {
 
 //  Additional information
 
-.addInfo {
+.add-info {
   @extend %borderBot 
 }
 
-.addInfo__desc {
+.add-info__desc {
   text-align: left;
    li {
     margin: 0px 0px 10px 0px;
