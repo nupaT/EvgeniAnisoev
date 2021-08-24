@@ -258,12 +258,40 @@ body {
   margin: 0px 0px 10px 0px;
 }
 
+.skills__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .skills__desc {
   text-align: left;
 }
 
 .skills__desc li {
   margin: 0px 0px 10px 0px;
+}
+
+.html__skill, .css__skill, .js__skill, .react__skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.html__skill .circle__fill, .css__skill .circle__fill, .js__skill .circle__fill, .react__skill .circle__fill {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  top: 2px;
+  left: 50px;
+  margin: 0px 0px 15px 7px;
+}
+
+.html__skill .clear, .css__skill .clear, .js__skill .clear, .react__skill .clear {
+  background-color: transparent;
+  border: 1px solid #fff;
 }
 
 .add-info__desc {

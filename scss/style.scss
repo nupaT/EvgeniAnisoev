@@ -140,12 +140,34 @@ body {
   @extend %borderBot
  }
 
+ .skills__container{
+   display: flex;
+ }
+
 .skills__desc {
   text-align: left;
    li {
     margin: 0px 0px 10px 0px;
    }
  }
+
+ .html__skill, .css__skill, .js__skill, .react__skill{
+ display: flex;
+    .circle__fill {
+      width: 15px;
+      height: 15px;
+      background-color: #fff;
+      border-radius: 50%;
+      position: relative;
+      top: 2px;
+      left: 50px;
+      margin: 0px 0px 15px 7px;
+    }
+    .clear{
+      background-color: transparent;
+      border: 1px solid #fff;
+    }
+  }
 
 //  Additional information
 
