@@ -6,7 +6,12 @@
   margin: 0px 50px 20px 55px;
   padding: 0px 0px 50px 0px;
   border-bottom: 1px solid transparent;
-  border-image: linear-gradient(to right top, #fffb00, rgb(255, 230, 0), #fffb00);;//(mix-blend-mode:difference);
+  border-image: linear-gradient(
+    to right top,
+    #fffb00,
+    rgb(255, 230, 0),
+    #fffb00
+  ); //(mix-blend-mode:difference);
   border-image-slice: 1;
   @media (max-width: 767px) {
     margin: 0px 10px 5px 10px;
@@ -17,11 +22,13 @@ body {
   font-family: Roboto;
   font-size: 20px;
   color: #fff;
-  background: #452d70;
+  background: #314a68;
 }
 
-.container { //? Нужен ли?
-  margin: 0px 0px 0px 55px;
+.container {
+  //? Нужен ли?
+  // margin: 0px 0px 0px 55px;
+  margin: 0 auto;
   width: calc(880px - 110px);
 }
 
@@ -38,8 +45,8 @@ body {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  background: #452d70;//linear-gradient(#1a2b41, #492ad6b5);
-  text-align: center; 
+  background: #314a68; //linear-gradient(#1a2b41, #492ad6b5);
+  text-align: center;
 }
 
 .wrapper {
@@ -53,7 +60,7 @@ body {
   position: sticky;
   top: 0;
   align-items: center;
-  background: linear-gradient(#7352af, #381280);
+  background: linear-gradient(#6e9ed8, #233447);
   margin: 0px 0px 50px 0px;
   border-radius: 10px;
 
@@ -75,9 +82,9 @@ body {
   display: flex;
   align-items: center;
   @extend %borderBot;
- }
+}
 
- .profile__container {
+.profile__container {
   display: flex;
 }
 
@@ -86,7 +93,7 @@ body {
   height: 100px;
   background-color: #000;
   color: #fff;
- }
+}
 
 .profile__description {
   margin: 0px 0px 0px 30px;
@@ -94,132 +101,138 @@ body {
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
- }
+}
 
 .profile__desc-name {
   margin: 0px 0px 15px 0px;
-  }
+}
 
 .profile__desc-proffesion {
   font-size: 22px;
   font-weight: bold;
- }
+}
 
 // Contacts
 
- .contacts {
+.contacts {
   @extend %borderBot;
-  }
+}
 
- .contacts__desc {
-   text-align: left;
-   li {
+.contacts__desc {
+  text-align: left;
+  li {
     margin: 0px 0px 10px 0px;
     a {
       color: rgb(184, 184, 184);
     }
-   }
   }
+}
 
 // Targets
 
 .targets {
-  @extend %borderBot
- }
+  @extend %borderBot;
+}
 
 .targets__desc {
   text-align: left;
   li {
     margin: 0px 0px 10px 0px;
   }
- }
+}
 
 //  Skills
 
 .skills {
-  @extend %borderBot
- }
+  @extend %borderBot;
+}
 
- .skills__container{
-   display: flex;
- }
+.skills__container {
+  display: flex;
+}
 
 .skills__desc {
   text-align: left;
-   li {
+  li {
     margin: 0px 0px 10px 0px;
-   }
- }
-
- .html__skill, .css__skill, .js__skill, .react__skill{
- display: flex;
-    .circle__fill {
-      width: 15px;
-      height: 15px;
-      background-color: #fff;
-      border-radius: 50%;
-      position: relative;
-      top: 2px;
-      left: 50px;
-      margin: 0px 0px 15px 7px;
-    }
-    .clear{
-      background-color: transparent;
-      border: 1px solid #fff;
-    }
   }
+}
+
+.html__skill,
+.css__skill,
+.js__skill,
+.react__skill {
+  display: flex;
+  .circle__fill {
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    top: 2px;
+    left: 50px;
+    margin: 0px 0px 15px 7px;
+  }
+  .clear {
+    background-color: transparent;
+    border: 1px solid #fff;
+  }
+}
 
 //  Additional information
 
 .add-info {
-  @extend %borderBot 
+  @extend %borderBot;
 }
 
 .add-info__desc {
   text-align: left;
-   li {
+  li {
     margin: 0px 0px 10px 0px;
-   }
- }
+  }
+}
 
 //  work examples
 
 .examples {
-  @extend %borderBot 
- }
+  @extend %borderBot;
+}
 
 .examples__desc {
   text-align: left;
-   li {
+  li {
     margin: 0px 0px 10px 0px;
     a {
-      color: #fff;
+      color: #ffffff;
     }
-   }
- }
+    a:hover {
+      color: #ffff00;
+    }
+  }
+}
 
- @media (max-width: 1200px) {
+@media (max-width: 1200px) {
   .wrapper {
-    max-width:880px;
+    max-width: 880px;
   }
 }
 
 @media (max-width: 992px) {
   .wrapper {
-    max-width:750px;
+    max-width: 750px;
   }
 }
 
 @media (max-width: 767px) {
   .wrapper {
-    max-width:100%;
+    max-width: 100%;
     padding: 0px 15px;
   }
-  .container{
+  .container {
     align-items: center;
     text-align: center;
     font-size: 15px;
-    word-break:break-all;
+    word-break: break-all;
     margin: 0px 5px;
     width: 100%;
   }
