@@ -74,12 +74,50 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+}
+
+.nav__burger {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 40px;
+  top: 20px;
+}
+
+.nav__burger-line {
+  display: none;
+  width: 50px;
+  margin: 15px 0 0 0;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+@media (max-width: 767px) {
+  .nav__burger-line {
+    display: block;
+    transition: linear 0.2s;
+  }
+}
+
+.open {
+  transform: rotate(45deg);
+}
+
 // Profile
 
 .profile {
   display: flex;
   align-items: center;
   @extend %borderBot;
+}
+
+@media (max-width: 767px) {
+  .profile {
+    margin: 70px 0px 0px 0px;
+  }
 }
 
 .profile__container {
