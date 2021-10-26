@@ -26,8 +26,6 @@ body {
 }
 
 .container {
-  //? Нужен ли?
-  // margin: 0px 0px 0px 55px;
   margin: 0 auto;
   width: calc(880px - 110px);
 }
@@ -41,11 +39,11 @@ body {
 }
 
 .main__container {
-  max-width: 1280px; // ? подумать
+  max-width: 1280px; // ?
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  background: #314a68; //linear-gradient(#1a2b41, #492ad6b5);
+  background: #314a68;
   text-align: center;
 }
 
