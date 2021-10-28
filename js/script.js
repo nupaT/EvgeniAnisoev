@@ -1,3 +1,15 @@
+const menu = document.querySelector(".nav__burger");
+const bMenu = document.querySelector(".nav__burger-line");
+
+menu.addEventListener("click", (e) => {
+  e.preventDefault();
+  if (bMenu.classList.contains("nav__burger-active")) {
+    bMenu.classList.remove("nav__burger-active");
+  } else {
+    bMenu.classList.add("nav__burger-active");
+  }
+});
+
 function levels(tag, level) {
   let skillLevel = "";
   for (i = 1; i <= 5; i++) {

@@ -81,29 +81,69 @@ body {
 }
 
 .nav__burger {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  right: 40px;
-  top: 20px;
-}
-
-.nav__burger-line {
   display: none;
-  width: 50px;
-  margin: 15px 0 0 0;
-  border-bottom: 1px solid rgb(255, 255, 255);
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  font-size: 0;
+  cursor: pointer;
+  text-align: center;
+  background-color: #666666;
 }
 
 @media (max-width: 767px) {
-  .nav__burger-line {
+  .nav__burger {
     display: block;
-    transition: linear 0.2s;
   }
 }
 
-.open {
+.nav__burger-line {
+  display: block;
+  position: absolute;
+  top: 38px;
+  left: 10px;
+  right: 10px;
+  height: 2px;
+  background-color: #fff;
+  transition-duration: 0s 0.3s;
+  transition-delay: 0.3s;
+}
+
+.nav__burger-line::before,
+.nav__burger-line::after {
+  position: absolute;
+  left: 0px;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  content: "";
+  transition: 0.3s linear;
+}
+
+.nav__burger-line::before {
+  top: -19px;
+}
+
+.nav__burger-line::after {
+  top: 19px;
+}
+
+.nav__burger-active {
+  background: none;
+  transition: 0s;
+}
+
+.nav__burger-active::before {
+  top: 0;
   transform: rotate(45deg);
+}
+
+.nav__burger-active::after {
+  top: 0;
+  transform: rotate(-45deg);
 }
 
 // Profile
