@@ -1,6 +1,6 @@
 const menu = document.querySelector(".nav__burger");
 const burgerLine = document.querySelector(".nav__burger-line");
-const burgerMenu = document.querySelector(".burger__menu");
+const nav = document.querySelector(".nav");
 
 menu.addEventListener("click", (e) => {
   e.preventDefault();
@@ -9,10 +9,10 @@ menu.addEventListener("click", (e) => {
   } else {
     burgerLine.classList.add("nav__burger-active");
   }
-  if (burgerMenu.classList.contains("burger__menu-open")) {
-    burgerMenu.classList.remove("burger__menu-open");
+  if (nav.classList.contains("nav__open")) {
+    nav.classList.remove("nav__open");
   } else {
-    burgerMenu.classList.add("burger__menu-open");
+    nav.classList.add("nav__open");
   }
 });
 
