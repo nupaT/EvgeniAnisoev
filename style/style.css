@@ -146,12 +146,11 @@ h6 {
 
 @media (max-width: 767px) {
   .nav {
-    display: none;
     width: 100%;
     height: 100%;
     overflow-x: hidden;
     position: absolute;
-    right: 0px;
+    right: -100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -159,12 +158,8 @@ h6 {
     background: none;
     background-color: #314a68;
     padding: 0 10%;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-    -webkit-transition: -webkit-transform 0.3s ease-in;
-    transition: -webkit-transform 0.3s ease-in;
-    transition: transform 0.3s ease-in;
-    transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+    -webkit-transition: right 0.3s ease-in;
+    transition: right 0.3s ease-in;
   }
   .nav ul {
     display: -webkit-box;
@@ -186,15 +181,11 @@ h6 {
 }
 
 .nav__open {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
+  right: 0;
 }
 
 .nav__open ul a:hover {
@@ -297,7 +288,6 @@ body {
   font-size: 20px;
   color: #fff;
   background: #314a68;
-  overflow-x: hidden;
 }
 
 .container {
@@ -463,7 +453,7 @@ body {
 }
 
 .examples__desc li a:hover {
-  color: #ffff00;
+  color: #ffe600;
 }
 
 @media (max-width: 1200px) {
@@ -513,5 +503,14 @@ body {
   }
   .profile, .contacts, .targets, .skills, .add-info, .examples {
     padding: 0px 0px 20px 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  document,
+  body,
+  .wrapper,
+  .contianer {
+    overflow-x: hidden;
   }
 }
