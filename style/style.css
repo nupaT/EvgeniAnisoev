@@ -112,6 +112,7 @@ h6 {
   height: 50px;
   position: -webkit-sticky;
   position: sticky;
+  overflow-x: hidden;
   top: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -147,7 +148,7 @@ h6 {
 @media (max-width: 767px) {
   .nav {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     overflow-x: hidden;
     position: fixed;
     right: -100%;
@@ -170,22 +171,18 @@ h6 {
         -ms-flex-direction: column;
             flex-direction: column;
     height: 100vh;
-    -ms-flex-line-pack: justify;
-        align-content: space-between;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .nav ul li {
-    font-size: 40px;
-    margin: 40px 0px 0px 0px;
-    padding: 0px 0px 40px 0px;
+    font-size: 35px;
+    padding: 0px 0px 20px 0px;
     border-bottom: 1px solid #ffe600;
   }
 }
 
 .nav__open {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   right: 0;
 }
 
@@ -196,10 +193,11 @@ h6 {
 .nav__burger {
   display: none;
   position: fixed;
-  right: 0px;
-  top: 0px;
-  width: 80px;
-  height: 80px;
+  right: 3px;
+  top: 3px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
   overflow: hidden;
   font-size: 0;
   cursor: pointer;
@@ -218,9 +216,9 @@ h6 {
 .nav__burger-line {
   display: block;
   position: absolute;
-  top: 38px;
-  left: 10px;
-  right: 10px;
+  top: 50%;
+  left: 13px;
+  right: 13px;
   height: 2px;
   background-color: #fff;
   -webkit-transition-duration: 0s 0.3s;
@@ -242,11 +240,11 @@ h6 {
 }
 
 .nav__burger-line::before {
-  top: -19px;
+  top: -15px;
 }
 
 .nav__burger-line::after {
-  top: 19px;
+  top: 15px;
 }
 
 .nav__burger-active {
