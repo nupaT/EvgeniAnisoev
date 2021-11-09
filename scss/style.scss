@@ -15,6 +15,11 @@ $colorBcGnd: #314a68;
     margin: 0px 10px 5px 10px;
   }
 }
+// ! del shake when  burger-menu is opening
+// html {
+//   overflow-x: hidden;
+//   margin-right: calc(-1 * (100vw - 100%));
+// }
 
 .wrapper {
   max-width: 880px;
