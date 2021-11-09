@@ -20,8 +20,7 @@ menu.addEventListener("click", (e) => {
 
 //close burger-menu after click on the link menu
 navItem.forEach((elem) => {
-  elem.addEventListener("click", (e) => {
-    // e.preventDefault();
+  elem.addEventListener("click", () => {
     nav.classList.remove("nav__open");
     burgerLine.classList.remove("nav__burger-active");
   });
@@ -37,7 +36,6 @@ function levels(tag, level) {
     }
   }
   return (document.querySelector(tag).innerHTML = skillLevel);
-  // document.querySelector(".tag").innerHTML = skillLevel;
 }
 
 levels(".html__skill", 4);
