@@ -2,6 +2,7 @@ const menu = document.querySelector(".nav__burger");
 const burgerLine = document.querySelector(".nav__burger-line");
 const nav = document.querySelector(".nav");
 const navItem = document.querySelectorAll(".nav__item");
+const body = document.querySelector("body");
 
 //open/close menu after click on the borger-menu
 menu.addEventListener("click", (e) => {
@@ -13,8 +14,10 @@ menu.addEventListener("click", (e) => {
   }
   if (nav.classList.contains("nav__open")) {
     nav.classList.remove("nav__open");
+    body.style.overflow = "";
   } else {
     nav.classList.add("nav__open");
+    body.style.overflow = "hidden";
   }
 });
 
@@ -23,6 +26,7 @@ navItem.forEach((elem) => {
   elem.addEventListener("click", () => {
     nav.classList.remove("nav__open");
     burgerLine.classList.remove("nav__burger-active");
+    body.style.overflow = "";
   });
 });
 
