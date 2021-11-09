@@ -1,7 +1,9 @@
 const menu = document.querySelector(".nav__burger");
 const burgerLine = document.querySelector(".nav__burger-line");
 const nav = document.querySelector(".nav");
+const navItem = document.querySelectorAll(".nav__item");
 
+//open/close menu after click on the borger-menu
 menu.addEventListener("click", (e) => {
   e.preventDefault();
   if (burgerLine.classList.contains("nav__burger-active")) {
@@ -14,6 +16,15 @@ menu.addEventListener("click", (e) => {
   } else {
     nav.classList.add("nav__open");
   }
+});
+
+//close burger-menu after click on the link menu
+navItem.forEach((elem) => {
+  elem.addEventListener("click", (e) => {
+    // e.preventDefault();
+    nav.classList.remove("nav__open");
+    burgerLine.classList.remove("nav__burger-active");
+  });
 });
 
 function levels(tag, level) {

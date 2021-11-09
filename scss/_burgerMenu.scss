@@ -15,10 +15,9 @@
     a {
       color: #fff;
       font-weight: bold;
-      transition: linear 0.3s; //new
+      transition: linear 0.3s;
     }
     a:hover {
-      //new
       border-bottom: 1px solid $colorBorderBott;
     }
   }
@@ -26,11 +25,10 @@
 
 @media (max-width: 767px) {
   .nav {
-    // visibility: hidden;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     overflow-x: hidden;
-    position: absolute;
+    position: fixed; //?
     right: -100%;
     align-items: center;
     z-index: 1;
@@ -41,6 +39,7 @@
     ul {
       display: flex;
       flex-direction: column;
+      height: 100vh;
       align-content: space-between;
       li {
         font-size: 40px;
@@ -53,13 +52,10 @@
 }
 
 .nav__open {
-  // visibility: visible;
   flex-direction: column;
   right: 0;
-
   ul {
     a:hover {
-      //new
       border-bottom: none;
     }
   }
@@ -67,7 +63,7 @@
 
 .nav__burger {
   display: none;
-  position: absolute;
+  position: fixed;
   right: 0px;
   top: 0px;
   width: 80px;
