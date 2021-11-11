@@ -307,6 +307,8 @@ body {
   font-weight: bold;
   font-size: 22px;
   margin: 0px 0px 30px 0px;
+  word-break: break-word;
+  word-wrap: break-word;
 }
 
 .main__container {
@@ -396,6 +398,8 @@ body {
 
 .targets__desc {
   text-align: left;
+  word-break: break-word;
+  word-wrap: break-word;
 }
 
 .targets__desc li {
@@ -449,6 +453,8 @@ body {
 
 .add-info__desc {
   text-align: left;
+  word-break: break-word;
+  word-wrap: break-word;
 }
 
 .add-info__desc li {
