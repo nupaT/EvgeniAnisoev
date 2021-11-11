@@ -368,6 +368,13 @@ body {
   text-align: center;
   font-size: 120%;
   margin: 0px 0px 15px 0px;
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .profile__desc-name {
+    text-align: center;
+  }
 }
 
 .profile__desc-proffesion {
