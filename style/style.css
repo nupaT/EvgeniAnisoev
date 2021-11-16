@@ -345,6 +345,12 @@ body {
   display: flex;
 }
 
+@media (max-width: 767px) {
+  .profile__container {
+    margin: 0 auto;
+  }
+}
+
 .profile__foto {
   width: 200px;
   height: 200px;
@@ -376,6 +382,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin: 0 auto;
   }
 }
 

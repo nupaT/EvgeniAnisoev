@@ -15,7 +15,8 @@ $colorBcGnd: #314a68;
     margin: 0px 10px 5px 10px;
   }
 }
-// ! del shake when  burger-menu is opening
+
+// del shake when  burger-menu is opening
 html {
   overflow-x: hidden;
   margin-right: calc(-1 * (100vw - 100%));
@@ -76,6 +77,12 @@ body {
   display: flex;
 }
 
+@media (max-width: 767px) {
+  .profile__container {
+    margin: 0 auto;
+  }
+}
+
 .profile__foto {
   width: 200px;
   height: 200px;
@@ -96,6 +103,7 @@ body {
 @media (max-width: 767px) {
   .profile__description {
     align-items: center;
+    margin: 0 auto;
   }
 }
 
