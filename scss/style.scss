@@ -93,6 +93,12 @@ body {
   text-align: left;
 }
 
+@media (max-width: 767px) {
+  .profile__description {
+    align-items: center;
+  }
+}
+
 .profile__desc-name {
   text-align: center;
   font-size: 120%;
