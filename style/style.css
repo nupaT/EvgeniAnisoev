@@ -106,6 +106,7 @@ h6 {
 }
 
 .nav {
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -364,6 +365,9 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: left;
 }
 
@@ -383,6 +387,7 @@ body {
 .profile__desc-proffesion {
   font-size: 22px;
   font-weight: bold;
+  margin: 0px 0px 15px 0px;
 }
 
 .contacts__desc {
@@ -434,6 +439,7 @@ body {
 .css__skill .circle__fill,
 .js__skill .circle__fill,
 .react__skill .circle__fill {
+  z-index: 0;
   width: 15px;
   height: 15px;
   background-color: #fff;
