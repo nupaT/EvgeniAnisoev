@@ -77,10 +77,11 @@ body {
 }
 
 .profile__foto {
-  width: 100px;
-  height: 100px;
-  background-color: #000;
-  color: #fff;
+  width: 200px;
+  height: 200px;
+  background-image: url("../img/ava3.jpg");
+  background-size: cover;
+  border-radius: 50%;
 }
 
 .profile__description {
