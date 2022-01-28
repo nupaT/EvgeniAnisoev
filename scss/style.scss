@@ -46,7 +46,7 @@ body {
   letter-spacing: 0.15em;
   font-weight: bold;
   font-size: 22px;
-  margin: 0px 0px 30px 0px;
+  margin: 10px 0px 30px 0px;
   word-break: break-word;
   word-wrap: break-word;
 }
@@ -138,6 +138,9 @@ body {
     margin: 0px 0px 10px 0px;
     a {
       color: #b8b8b8;
+    }
+    a:hover {
+      color: $colorBorderBott;
     }
   }
 }
