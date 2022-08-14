@@ -15,7 +15,8 @@ $colorBcGnd: #314a68;
     margin: 0px 10px 5px 10px;
   }
 }
-// ! del shake when  burger-menu is opening
+
+// del shake when  burger-menu is opening
 html {
   overflow-x: hidden;
   margin-right: calc(-1 * (100vw - 100%));
@@ -45,7 +46,9 @@ body {
   letter-spacing: 0.15em;
   font-weight: bold;
   font-size: 22px;
-  margin: 0px 0px 30px 0px;
+  margin: 10px 0px 30px 0px;
+  word-break: break-word;
+  word-wrap: break-word;
 }
 
 .main__container {
@@ -74,11 +77,18 @@ body {
   display: flex;
 }
 
+@media (max-width: 767px) {
+  .profile__container {
+    margin: 0 auto;
+  }
+}
+
 .profile__foto {
-  width: 100px;
-  height: 100px;
-  background-color: #000;
-  color: #fff;
+  width: 200px;
+  height: 200px;
+  background-image: url("../img/ava3.jpg");
+  background-size: cover;
+  border-radius: 50%;
 }
 
 .profile__description {
@@ -86,18 +96,34 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
   text-align: left;
+}
+
+@media (max-width: 767px) {
+  .profile__description {
+    align-items: center;
+    margin: 0 auto;
+  }
 }
 
 .profile__desc-name {
   text-align: center;
   font-size: 120%;
   margin: 0px 0px 15px 0px;
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .profile__desc-name {
+    text-align: center;
+  }
 }
 
 .profile__desc-proffesion {
   font-size: 22px;
   font-weight: bold;
+  margin: 0px 0px 15px 0px;
 }
 
 // Contacts
@@ -113,6 +139,9 @@ body {
     a {
       color: #b8b8b8;
     }
+    a:hover {
+      color: $colorBorderBott;
+    }
   }
 }
 
@@ -124,6 +153,8 @@ body {
 
 .targets__desc {
   text-align: left;
+  word-break: break-word;
+  word-wrap: break-word;
   li {
     margin: 0px 0px 10px 0px;
   }
@@ -152,6 +183,7 @@ body {
 .react__skill {
   display: flex;
   .circle__fill {
+    z-index: 0;
     width: 15px;
     height: 15px;
     background-color: #fff;
@@ -175,6 +207,8 @@ body {
 
 .add-info__desc {
   text-align: left;
+  word-break: break-word;
+  word-wrap: break-word;
   li {
     margin: 0px 0px 10px 0px;
   }

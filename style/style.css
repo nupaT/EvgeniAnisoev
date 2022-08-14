@@ -106,6 +106,7 @@ h6 {
 }
 
 .nav {
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -306,7 +307,9 @@ body {
   letter-spacing: 0.15em;
   font-weight: bold;
   font-size: 22px;
-  margin: 0px 0px 30px 0px;
+  margin: 10px 0px 30px 0px;
+  word-break: break-word;
+  word-wrap: break-word;
 }
 
 .main__container {
@@ -342,11 +345,18 @@ body {
   display: flex;
 }
 
+@media (max-width: 767px) {
+  .profile__container {
+    margin: 0 auto;
+  }
+}
+
 .profile__foto {
-  width: 100px;
-  height: 100px;
-  background-color: #000;
-  color: #fff;
+  width: 200px;
+  height: 200px;
+  background-image: url("../img/ava3.jpg");
+  background-size: cover;
+  border-radius: 50%;
 }
 
 .profile__description {
@@ -361,18 +371,38 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: left;
+}
+
+@media (max-width: 767px) {
+  .profile__description {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+  }
 }
 
 .profile__desc-name {
   text-align: center;
   font-size: 120%;
   margin: 0px 0px 15px 0px;
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .profile__desc-name {
+    text-align: center;
+  }
 }
 
 .profile__desc-proffesion {
   font-size: 22px;
   font-weight: bold;
+  margin: 0px 0px 15px 0px;
 }
 
 .contacts__desc {
@@ -387,8 +417,14 @@ body {
   color: #b8b8b8;
 }
 
+.contacts__desc li a:hover {
+  color: #ffe600;
+}
+
 .targets__desc {
   text-align: left;
+  word-break: break-word;
+  word-wrap: break-word;
 }
 
 .targets__desc li {
@@ -422,6 +458,7 @@ body {
 .css__skill .circle__fill,
 .js__skill .circle__fill,
 .react__skill .circle__fill {
+  z-index: 0;
   width: 15px;
   height: 15px;
   background-color: #fff;
@@ -442,6 +479,8 @@ body {
 
 .add-info__desc {
   text-align: left;
+  word-break: break-word;
+  word-wrap: break-word;
 }
 
 .add-info__desc li {
